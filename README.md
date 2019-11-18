@@ -15,7 +15,11 @@ This starter is a fork of Gatsby Starter Blog, the most popular starter by far �
 ## 🚀 Things to Fix
 
 1. Fix the README.md and package.json.
-2. erase the content.
+2. Modify blog posts. See what happens.
+3. erase the content.
+4. Update front page with react
+5. Create menu.
+6. Create static "Pages"
 
 ## 🚀 Quick start
 
