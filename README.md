@@ -12,6 +12,11 @@
 
 This starter is a fork of Gatsby Starter Blog, the most popular starter by far – with second place being Gatsby Starter Netlify CMS. So I decided to combine the 2!
 
+## 🚀 Things to Fix
+
+1. Fix the README.md and package.json.
+2. erase the content.
+
 ## 🚀 Quick start
 
 1.  **Create a Gatsby site.**
