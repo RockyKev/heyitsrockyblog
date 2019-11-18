@@ -5,49 +5,27 @@
   </a>
 </p>
 <h1 align="center">
-  Gatsby's personal blog starter
+  Hey It's Rocky's Read me file!
 </h1>
 
-<img alt="screesnhot" src="./screenshot.png">
+## What is this?
 
-This starter is a fork of Gatsby Starter Blog, the most popular starter by far – with second place being Gatsby Starter Netlify CMS. So I decided to combine the 2!
+This is my personal blog, migrated from WordPress, built with Gatsby (which runs off of React) and NetlifyCMS.
 
 ## 🚀 Things to Fix
 
-1. Fix the README.md and package.json.
+1. Fix the README.md and package.json. Change images.
 2. Modify blog posts. See what happens.
 3. erase the content.
 4. Update front page with react
 5. Create menu.
 6. Create static "Pages"
 
-## 🚀 Quick start
+## What this is built out of
 
-1.  **Create a Gatsby site.**
+<img alt="screesnhot" src="./screenshot.png">
 
-    Use the Gatsby CLI to create a new site, specifying the blog starter.
-
-    ```sh
-    # create a new Gatsby site using the blog starter
-    gatsby new my-blog-starter https://github.com/thomaswangio/gatsby-personal-starter-blog
-    ```
-
-1.  **Start developing.**
-
-    Navigate into your new site’s directory and start it up.
-
-    ```sh
-    cd my-blog-starter/
-    gatsby develop
-    ```
-
-1.  **Open the source code and start editing!**
-
-    Your site is now running at `http://localhost:8000`!
-
-    _Note: You'll also see a second link: _`http://localhost:8000/___graphql`_. This is a tool you can use to experiment with querying your data. Learn more about using this tool in the [Gatsby tutorial](https://www.gatsbyjs.org/tutorial/part-five/#introducing-graphiql)._
-
-    Open the `my-blog-starter` directory in your code editor of choice and edit `src/pages/index.js`. Save your changes and the browser will update in real time!
+This was deployed thanks to [Thomas Wang](https://github.com/thomaswangio/gatsby-personal-starter-blog), and is using a modified fork of Gatsby Starter Blog and using the Gatsby Starter Netlify CMS.
 
 ## 🎓 Learning Gatsby
 
