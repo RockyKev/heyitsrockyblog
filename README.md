@@ -14,8 +14,9 @@ This is my personal blog, migrated from WordPress, built with Gatsby (which runs
 
 ## 🚀 Things to Fix
 
-1. Fix the README.md and package.json. Change images.
-2. Modify blog posts. See what happens.
+~1. Fix the README.md and package.json. Change images.~
+~2. Modify blog posts. See what happens.~
+
 3. erase the content.
 4. Update front page with react
 5. Create menu.

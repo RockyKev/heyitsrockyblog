@@ -7,7 +7,7 @@ import SEO from "../components/seo"
 import { rhythm } from "../utils/typography"
 import Button from "../components/button"
 
-class Blog extends React.Component {
+class AboutMe extends React.Component {
   render() {
     const { data } = this.props
     const siteTitle = data.site.siteMetadata.title
@@ -52,7 +52,7 @@ class Blog extends React.Component {
   }
 }
 
-export default Blog
+export default AboutMe
 
 export const pageQuery = graphql`
   query {
