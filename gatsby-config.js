@@ -7,6 +7,9 @@ module.exports = {
     siteUrl: `https://gatsby-starter-blog-demo.netlify.com/`,
     social: {
       twitter: `rockykev`,
+      github: `RockyKev`,
+      Medium: `@RockyKev`,
+      website: `https://HeyItsRocky.com`,
     },
   },
   plugins: [
