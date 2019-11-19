@@ -4,7 +4,7 @@ module.exports = {
     title: `Hey It's Rocky`,
     author: `Rocky Kev`,
     description: `Rocky's personal blog with styled components, dark mode, and Netlify CMS.`,
-    siteUrl: `https://gatsby-starter-blog-demo.netlify.com/`,
+    siteUrl: `https://heyItsRocky.com/`,
     social: {
       twitter: `rockykev`,
       github: `RockyKev`,
