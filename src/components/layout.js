@@ -3,6 +3,7 @@ import { Link } from "gatsby"
 import styled from "styled-components"
 
 import { rhythm, scale } from "../utils/typography"
+import Topbar from "../components/topbar"
 
 class Layout extends React.Component {
   render() {
@@ -55,6 +56,7 @@ class Layout extends React.Component {
     }
     return (
       <Wrapper>
+        <Topbar />
         <div
           style={{
             marginLeft: `auto`,
