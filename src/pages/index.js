@@ -34,7 +34,7 @@ class IndexPage extends React.Component {
           <Button marginTop="35px">About Me</Button>
         </Link>
 
-        <Placeholder />
+        {/* <Placeholder /> */}
       </Layout>
     )
   }
