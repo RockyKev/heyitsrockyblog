@@ -1,5 +1,5 @@
 ---
-title: 'PROJECT: The Peer Review System'
+title: "PROJECT: The Peer Review System"
 author: rkadmin
 type: post
 date: 2019-08-16T22:53:27+00:00
@@ -8,24 +8,25 @@ categories:
   - projects
 tags:
   - peer review
-
+description: Peer Review System
 ---
- <figure class="wp-block-image alignwide"><img src="https://rockykev.com/wp-content/uploads/2019/08/Peer-Review.png" alt="" class="wp-image-360" srcset="http://rockykevnov2019v2.local/wp-content/uploads/2019/08/Peer-Review.png 560w, http://rockykevnov2019v2.local/wp-content/uploads/2019/08/Peer-Review-300x169.png 300w" sizes="(max-width: 560px) 100vw, 560px" /></figure> 
+
+ <figure class="wp-block-image alignwide"><img src="https://rockykev.com/wp-content/uploads/2019/08/Peer-Review.png" alt="" class="wp-image-360" srcset="http://rockykevnov2019v2.local/wp-content/uploads/2019/08/Peer-Review.png 560w, http://rockykevnov2019v2.local/wp-content/uploads/2019/08/Peer-Review-300x169.png 300w" sizes="(max-width: 560px) 100vw, 560px" /></figure>
 
 ## <u>Table of Contents</u>
 
-  * [Introduction][1]
-  * [Features][2]
-  * [Built With][3]
-  * [Explanation][4]
-  * [Acknowledgements][5]
-  * [Additional][6]
+- [Introduction][1]
+- [Features][2]
+- [Built With][3]
+- [Explanation][4]
+- [Acknowledgements][5]
+- [Additional][6]
 
 ## <u>Introduction</u> {#intro}
 
-One big project I worked on was The Peer Review system. The idea was to have a system where students review each other&#8217;s work, thus reducing manpower on the instructor, and increase student participation. 
+One big project I worked on was The Peer Review system. The idea was to have a system where students review each other&#8217;s work, thus reducing manpower on the instructor, and increase student participation.
 
-Development of this tool was a team effort. 
+Development of this tool was a team effort.
 
 The Peer Review System was a unique mechanism in the Mirasee Courses space, and I have yet to find a system that functioned as well as that. If you&#8217;re curious of how the Peer Review system works &#8212; join the [Business Ignition Bootcamp][7] to see it in action!
 
@@ -33,78 +34,78 @@ The Peer Review System was a unique mechanism in the Mirasee Courses space, and 
 
 <u>How it works: </u>
 
-  1. During the Homework Due Phase &#8212; Student A submits their homework.  
-    
-  2. Once all homeworks are in, Peer Review starts. 
-  3. During the Peer Review Phase &#8212; Student A logs in to review Student B&#8217;s homework. 
-  4. In order to complete this phase, Student A must review 3 peer reviews. 
-  5. After Peer Review is finished, Student A should receive 3 peer reviews on their own homework. 
+1. During the Homework Due Phase &#8212; Student A submits their homework.
 
-<u>Rules</u>: 
+2. Once all homeworks are in, Peer Review starts.
+3. During the Peer Review Phase &#8212; Student A logs in to review Student B&#8217;s homework.
+4. In order to complete this phase, Student A must review 3 peer reviews.
+5. After Peer Review is finished, Student A should receive 3 peer reviews on their own homework.
 
-  1. All submissions/peer review is anonymous. 
-  2. **Student A** must not receive their own work to review, or the same review from prior. (Example: **Student A** should not get **Student B**&#8216;s homework three times.)
-  3. The Review Pool randomly selects a homework to provide to a student. 
-  4. If **Student A** spends longer than 60 minutes on the review, it goes back into the Review Pool, to avoid &#8216;locking&#8217; a review for someone who becomes idle within the program.
-  5. The Review Pool&#8217;s algorithm ensures all homeworks receive a minimum of 1 review.
-  6. The Review Pool&#8217;s algorithm ensures all homeworks receive a maximum of 3 reviews.
-  7. Mathematically, all participating students should receive at least 1 review. The assumption is that at least 80% of students will commit to completing the Peer Review stage. 
+<u>Rules</u>:
+
+1. All submissions/peer review is anonymous.
+2. **Student A** must not receive their own work to review, or the same review from prior. (Example: **Student A** should not get **Student B**&#8216;s homework three times.)
+3. The Review Pool randomly selects a homework to provide to a student.
+4. If **Student A** spends longer than 60 minutes on the review, it goes back into the Review Pool, to avoid &#8216;locking&#8217; a review for someone who becomes idle within the program.
+5. The Review Pool&#8217;s algorithm ensures all homeworks receive a minimum of 1 review.
+6. The Review Pool&#8217;s algorithm ensures all homeworks receive a maximum of 3 reviews.
+7. Mathematically, all participating students should receive at least 1 review. The assumption is that at least 80% of students will commit to completing the Peer Review stage.
 
 ## <u>Built With</u> {#built}
 
-Our LMS was on a LAMP Stack running WordPress. 
+Our LMS was on a LAMP Stack running WordPress.
 
 <u>Presentation Layer: </u>  
-Bootstrap library, with HTML/CSS.   
-We used custom shortcodes that tied in with Gravity Forms to generate a homework/peer review UI. 
+Bootstrap library, with HTML/CSS.  
+We used custom shortcodes that tied in with Gravity Forms to generate a homework/peer review UI.
 
 <u>Application Layer: </u>  
-The algorithm and Peer Review selection was written in PHP as a custom plugin. 
+The algorithm and Peer Review selection was written in PHP as a custom plugin.
 
 <u>Data Layer: </u>  
-The Peer Review system used Gravity Forms to store homework data within the MySQL database. 
+The Peer Review system used Gravity Forms to store homework data within the MySQL database.
 
-Within the database, we set up 2 MySQL Tables   
-* Table 1 stored user IDs, and homework submission IDs.   
-* Table 2 stored User IDs, homework submission IDs, and peer submissions ID. 
+Within the database, we set up 2 MySQL Tables
+
+- Table 1 stored user IDs, and homework submission IDs.
+- Table 2 stored User IDs, homework submission IDs, and peer submissions ID.
 
 <hr class="wp-block-separator" />
 
-There&#8217;s another set of code that then pulls who reviewed the student&#8217;s work, and displays that back to the student.   
-
+There&#8217;s another set of code that then pulls who reviewed the student&#8217;s work, and displays that back to the student.
 
 For example: **Student A** wants to see the feedback on THEIR homework.
 
-The code will visit Table 2, and will look for that homework submission ID, and display all the Peer Reviews for that homework submission in a new page. 
+The code will visit Table 2, and will look for that homework submission ID, and display all the Peer Reviews for that homework submission in a new page.
 
 ## <u>Explanation</u> {#explanation}
 
-  1. You make a &#8216;homework questions&#8217; & &#8216;peer review questions&#8217; within gravity forms. 
-      * That creates two form IDs. Example: &#8220;Homework Week 1 &#8211; ID1&#8221; & &#8220;Peer Review Week 1 &#8211; ID2&#8242;.
-  2. When the user submits the homework, it fires off a api call to add that user, that homework submission ID, and the form ID to the SQL table 1. 
-  3. When a user visits the Peer Review, they are given two columns. 
-      * Column 1 is generated by the Peer Review code. 
-      * Column 2 is the standard Gravity forms (i.e. Peer Review Week 1 &#8211; ID2&#8242;.)
-      * To generate Column 1, the Peer Review code follows &#8216;the rules&#8217; (listed above), and pulls a student&#8217;s homework submission from the database. It then notates who received that homework, the homework submission ID, and the Peer Review ID in Table 2. 
-      * If the user fails to submit &#8211; another flag is added to that Peer Review ID, stating that the review failed and to return it back into the Review Pool. 
-  4. On submission of the review, Table 2 gets updated. 
-  5. Everything is tracked in the Peer Review table. Overall, the code will know that **Student A** has reviewed the following homeworks &#8211;> **Student B, Student C, and Student D.** 
-  6. Afterwards, a separate code displays that student&#8217;s results. 
+1. You make a &#8216;homework questions&#8217; & &#8216;peer review questions&#8217; within gravity forms.
+   - That creates two form IDs. Example: &#8220;Homework Week 1 &#8211; ID1&#8221; & &#8220;Peer Review Week 1 &#8211; ID2&#8242;.
+2. When the user submits the homework, it fires off a api call to add that user, that homework submission ID, and the form ID to the SQL table 1.
+3. When a user visits the Peer Review, they are given two columns.
+   - Column 1 is generated by the Peer Review code.
+   - Column 2 is the standard Gravity forms (i.e. Peer Review Week 1 &#8211; ID2&#8242;.)
+   - To generate Column 1, the Peer Review code follows &#8216;the rules&#8217; (listed above), and pulls a student&#8217;s homework submission from the database. It then notates who received that homework, the homework submission ID, and the Peer Review ID in Table 2.
+   - If the user fails to submit &#8211; another flag is added to that Peer Review ID, stating that the review failed and to return it back into the Review Pool.
+4. On submission of the review, Table 2 gets updated.
+5. Everything is tracked in the Peer Review table. Overall, the code will know that **Student A** has reviewed the following homeworks &#8211;> **Student B, Student C, and Student D.**
+6. Afterwards, a separate code displays that student&#8217;s results.
 
 ## <u>Acknowledgements</u> {#acknowledgements}
 
-Shout out to the Mirasee team for all the bug testing. 
+Shout out to the Mirasee team for all the bug testing.
 
-The development team: 
+The development team:
 
 My work was defining the spec doc, developing much of the design/form management and additional functionality. [Krunal Patel][8] was involved in the algorithms and SQL data management. [Maureen Lauder][9] was in charge of project management.
 
- [1]: #intro
- [2]: #features
- [3]: #built
- [4]: #explanation
- [5]: #acknowledgements
- [6]: #additional
- [7]: https://mirasee.com/2018/bib/notification
- [8]: https://www.linkedin.com/in/krunalpatel/
- [9]: https://www.linkedin.com/in/maureenlauder/
+[1]: #intro
+[2]: #features
+[3]: #built
+[4]: #explanation
+[5]: #acknowledgements
+[6]: #additional
+[7]: https://mirasee.com/2018/bib/notification
+[8]: https://www.linkedin.com/in/krunalpatel/
+[9]: https://www.linkedin.com/in/maureenlauder/

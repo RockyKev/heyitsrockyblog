@@ -11,7 +11,7 @@ tags:
   - startup
   - trade-offs
   - tradeoffs
-
+description: Tech Debt
 ---
 Your team has been working on a codebase. Every few months, there would be a new feature. And the new feature had a timeline of two weeks to deliver. It&#8217;s been fun to crunch through and send it to production right before the deadline. But after 3 years, it&#8217;s been getting harder and harder to add something new. 
 

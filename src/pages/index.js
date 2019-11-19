@@ -4,6 +4,7 @@ import { Link } from "gatsby"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import Button from "../components/button"
+import Placeholder from "../components/placeholder"
 
 class IndexPage extends React.Component {
   render() {
@@ -17,7 +18,6 @@ class IndexPage extends React.Component {
         />
         {/* <img src="https://i.imgur.com/rqBKk5a.jpg" /> */}
         {/* <img style={{ margin: 0 }} src="./GatsbyScene.svg" alt="Gatsby Scene" /> */}
-        
         <h1>
           <span role="img" aria-label="wave emoji">
             👋
@@ -33,6 +33,8 @@ class IndexPage extends React.Component {
         <Link to="/about-me/">
           <Button marginTop="35px">About Me</Button>
         </Link>
+
+        <Placeholder />
       </Layout>
     )
   }
