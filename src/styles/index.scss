@@ -2,3 +2,62 @@
   display: flex;
   justify-content: space-between;
 }
+
+.header img {
+  height: 100%;
+  padding-right: 40px;
+}
+
+.main-title {
+  font-size: 30px;
+  border: solid black 1px;
+  padding: 20px 40px;
+  text-align: center;
+}
+
+.card-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.card-container > .card {
+  flex-grow: 1;
+  flex: 1 1 30%;
+  padding: 1%;
+  align-items: center;
+}
+
+.card-title {
+  text-align: center;
+  margin-top: 0;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+
+  a {
+    box-shadow: 0;
+  }
+
+  img {
+    box-shadow: 0;
+    width: 100%;
+  }
+
+  p {
+    text-align: center;
+    margin-top: 0;
+  }
+}
+
+.blog-container {
+  background-color: tan;
+}
+.blog {
+  .card {
+    padding: 0 5%;
+  }
+}
