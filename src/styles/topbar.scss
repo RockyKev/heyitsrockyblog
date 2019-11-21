@@ -44,16 +44,15 @@
     line-height: 1.2;
     text-align: center;
     box-shadow: none;
-  }
 
-  &:hover,
-  &:active {
-    color: #111;
-    font-weight: 900;
-    font-size: 1.2rem;
+    &:hover,
+    &:active {
+      color: white;
+      font-weight: 900;
+      font-size: 1.2rem;
+    }
   }
 }
-
 .brand {
   a {
     display: flex;
@@ -61,15 +60,16 @@
     color: #333;
     margin-right: 0;
     font-weight: 600;
-    font-size: 1.1rem;
-  }
+    font-size: 1.2rem;
 
-  &:hover,
-  &:focus {
-    color: black;
+    &:hover,
+    &:focus {
+      color: black;
+      box-shadow: 0 0 0 0;
+      font-size: 1.3rem;
+    }
   }
 }
-
 // .main {
 //   display: flex;
 //   justify-content: space-between;

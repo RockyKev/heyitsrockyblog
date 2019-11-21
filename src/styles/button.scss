@@ -1,0 +1,23 @@
+.button {
+  display: block;
+  border: none;
+  text-align: center;
+  box-sizing: border-box;
+  text-decoration: none;
+  padding: 10px 25px;
+  cursor: pointer;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+
+  background: black;
+  color: rgb(255, 255, 255);
+  font-size: 15px;
+  font-weight: 600;
+  border-radius: 6px;
+  margin: 10px 0px;
+
+  &:hover {
+    box-shadow: inset 0 0 100px 100px rgba(255, 255, 255, 0.25);
+    font-size: 20px;
+  }
+}
