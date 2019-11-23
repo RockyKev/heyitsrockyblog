@@ -14,19 +14,23 @@ This is my personal blog, migrated from WordPress, built with Gatsby (which runs
 
 ## 🚀 Things to Fix
 
-~1. Fix the README.md and package.json. Change images.~
-~2. Modify blog posts. See what happens.~
-
-3. erase the content.
-4. Update front page with react
-5. Create menu.
-6. Create static "Pages"
+[x] Fix the README.md and package.json. Change images.
+[x] Modify blog posts. See what happens.
+[x] Erase the content.
+[] Update front page with react
+[x] Create menu.
+[] Create static "Pages -> About me, work, contact us"
+[] Create static "Projects"
+[] Pull all blog posts
 
 ## What this is built out of
 
 <img alt="screesnhot" src="./screenshot.png">
 
 This was deployed thanks to [Thomas Wang](https://github.com/thomaswangio/gatsby-personal-starter-blog), and is using a modified fork of Gatsby Starter Blog and using the Gatsby Starter Netlify CMS.
+
+How to run is "Gatsby Develop". 
+Any updates to the master git gets auto-deployed to Netlify. 
 
 ## 🎓 Learning Gatsby
 

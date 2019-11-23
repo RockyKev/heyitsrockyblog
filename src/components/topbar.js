@@ -43,7 +43,7 @@ export default class Topbar extends Component {
           </div>
           <div className="links">
             <Link to="/blog/">Go to Blog</Link>
-            <Link to="/archive/">All the posts</Link>
+            <Link to="/work/">Work I've done</Link>
             <Link to="/about-me/">About Me</Link>
           </div>
         </div>

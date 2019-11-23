@@ -44,6 +44,8 @@
     line-height: 1.2;
     text-align: center;
     box-shadow: none;
+    transition: color 0.5s;
+    transition: font-size 0.3s;
 
     &:hover,
     &:active {
@@ -57,15 +59,16 @@
   a {
     display: flex;
     align-items: center;
-    color: #333;
     margin-right: 0;
     font-weight: 600;
     font-size: 1.2rem;
+    color: black;
+    transition: font-size 0.3s;
+    box-shadow: 0 0 0 0;
 
     &:hover,
     &:focus {
       color: black;
-      box-shadow: 0 0 0 0;
       font-size: 1.3rem;
     }
   }

@@ -1,5 +1,5 @@
 import React from "react"
-import { Link } from "gatsby"
+import { Link, graphql } from "gatsby"
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
@@ -37,14 +37,39 @@ function Hi() {
 const CardWrapper = props => {
   return (
     <div className="card">
-      <a href={props.link}>
-        <h3 className="card-title"> {props.title}</h3>{" "}
-      </a>
-      <a href={props.link}>
-        <img className="card-image" src={props.image} />
-      </a>
+      <div className="card-title-image">
+        <a href={props.link}>
+          <h3 className="card-title"> {props.title}</h3>{" "}
+        </a>
+        <a href={props.link}>
+          <img className="card-image" src={props.image} />
+        </a>
+      </div>
+      {props.body ? (
+        <div className="card-text">
+          <p>{props.body}</p>
+        </div>
+      ) : null}
+    </div>
+  )
+}
 
-      {props.body ? <p> {props.body} </p> : null}
+const RowWrapper = props => {
+  return (
+    <div className="row">
+      <div className="card-title-image">
+        <a href={props.link}>
+          <h3 className="card-title"> {props.title}</h3>
+        </a>
+        <a href={props.link}>
+          <img className="card-image" src={props.image} />
+        </a>
+      </div>
+      {props.body ? (
+        <div className="card-text">
+          <p>{props.body}</p>
+        </div>
+      ) : null}
     </div>
   )
 }
@@ -53,14 +78,15 @@ function RecentWork() {
   return (
     <div>
       <h2 className="main-title">Recent Work </h2>
-      <div className="card-container">
+      <p> Working on getting this up soon. Stay tuned. </p>
+      {/* <div className="card-container recent-work">
         <CardWrapper title="OTHER PROJECT" image={Elearning} link="#" />
         <CardWrapper title="OTHER PROJECT" image={Robot} link="#" />
         <CardWrapper title="OTHER PROJECT" image={Elearning} link="#" />
         <CardWrapper title="OTHER PROJECT" image={Robot} link="#" />
         <CardWrapper title="OTHER PROJECT" image={Elearning} link="#" />
         <CardWrapper title="OTHER PROJECT" image={Robot} link="#" />
-      </div>
+      </div> */}
     </div>
   )
 }
@@ -70,23 +96,23 @@ function NewBlogPost() {
     <div className="blog-container">
       <h2 className="main-title">New Blog Posts </h2>
       <div className="card-container blog">
-        <CardWrapper
+        <RowWrapper
           title="Coding"
           image={Elearning}
-          body="Coding and How-tos guides. Education."
-          link="a"
+          body="Coding and How-tos guides. Education. [Coming soon: GraphQL display of tagged content]"
+          link="blog"
         />
-        <CardWrapper
+        <RowWrapper
           title="Interests"
           image={Robot}
-          body="Less techie/professional. Hacks!"
-          link="b"
+          body="Less techie/professional. Hacks! [Coming soon: GraphQL display of tagged content]"
+          link="blog"
         />
-        <CardWrapper
+        <RowWrapper
           title="Professional"
           image={Elearning}
-          body="team, management, or code thoughts"
-          link="#"
+          body="team, management, or code thoughts [Coming soon: GraphQL display of tagged content]"
+          link="blog"
         />
       </div>
     </div>
@@ -95,7 +121,7 @@ function NewBlogPost() {
 
 class IndexPage extends React.Component {
   render() {
-    const siteTitle = "Hey Its Rocky's Blog"
+    const siteTitle = "Hey It's Rocky's Blog"
 
     return (
       <Layout location={this.props.location} title={siteTitle}>
@@ -124,16 +150,42 @@ class IndexPage extends React.Component {
   }
 }
 
+// const { data } = this.props
+// const postTitle = data.allMdx.edges.node.frontmatter.title;
+// const postDescription = data.allMdx.edges.node.frontmatter.title;
+// const post = data.allMdx.edges.node
+
 export default IndexPage
 
-export const query = graphql`
-  query {
-    fileName: file(relativePath: { eq: "images/myimage.jpg" }) {
-      childImageSharp {
-        fluid(maxWidth: 400, maxHeight: 250) {
-          ...GatsbyImageSharpFluid
-        }
-      }
-    }
-  }
-`
+// export const pageQuery = graphql`
+//   query {
+//     allMdx(sort: { fields: [frontmatter___date], order: DESC }) {
+//       edges {
+//         node {
+//           excerpt
+//           fields {
+//             slug
+//           }
+//           frontmatter {
+//             date(formatString: "MMMM DD, YYYY")
+//             title
+//             description
+//             categories
+//           }
+//         }
+//       }
+//     }
+//   }
+// `
+
+// export const query = graphql`
+//   query {
+//     fileName: file(relativePath: { eq: "images/myimage.jpg" }) {
+//       childImageSharp {
+//         fluid(maxWidth: 400, maxHeight: 250) {
+//           ...GatsbyImageSharpFluid
+//         }
+//       }
+//     }
+//   }
+// `

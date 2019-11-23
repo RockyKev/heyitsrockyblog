@@ -1,11 +1,33 @@
+$mobileMin: "400px";
+$mobileMax: "768px";
+
+
+
+
+
+.wrapper {
+
+  .iPhone {
+    margin-top: 60px;
+    margin-bottom: 80px;
+  }
+
+  .pixel {
+    margin-top: 100px;
+    margin-bottom: 80px;
+  }
+
+}
+
+
 .header {
   display: flex;
   justify-content: space-between;
-}
 
-.header img {
-  height: 100%;
-  padding-right: 40px;
+  img {
+    height: 100%;
+    padding-right: 40px;
+  }
 }
 
 .main-title {
@@ -29,21 +51,28 @@
   align-items: center;
 }
 
+.recent-work > .card {
+  flex-grow: 1;
+  flex: 1 1 30%;
+  padding: 1%;
+  align-items: center;
+}
+
 .card-title {
   text-align: center;
   margin-top: 0;
 }
 
-.card {
+.card-container .card {
   display: flex;
   flex-direction: column;
 
   a {
-    box-shadow: 0;
+    box-shadow: 0 0 0 0;
   }
 
   img {
-    box-shadow: 0;
+    box-shadow: 0 0 0 0;
     width: 100%;
   }
 
@@ -59,5 +88,44 @@
 .blog {
   .card {
     padding: 0 5%;
+  }
+}
+
+.row {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+
+  .card-title-image {
+    max-width: 200px;
+  }
+
+  .card-text {
+    padding: 20px;
+  }
+
+  a {
+    box-shadow: 0 0 0 0;
+  }
+}
+
+.skills {
+  display: flex;
+  justify-content: space-between;
+
+  .card {
+    max-width: 30%;
+  }
+
+  .card:nth-child(1) {
+    text-align: left;
+  }
+
+  .card:nth-child(2) {
+    text-align: center;
+  }
+
+  .card:nth-child(3) {
+    text-align: right;
   }
 }
