@@ -16,7 +16,11 @@ class Blog extends React.Component {
       <Layout location={this.props.location} title={siteTitle}>
         <SEO title="All posts" />
 
-        <p> This is my blog. </p>
+        <p>
+          {" "}
+          This is my blog. I'm still working on importing all my content from
+          the previous blog. Stay tuned{" "}
+        </p>
 
         <div style={{ margin: "20px 0 40px" }}>
           {posts.map(({ node }) => {

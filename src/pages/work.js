@@ -3,7 +3,7 @@ import { Link } from "gatsby"
 
 import Layout from "../components/layout"
 
-function _WorkFreelancing() {
+function Work_Freelancing() {
   return (
     <React.Fragment>
       <h4 id="developer-developer-avocado-developer-">
@@ -26,7 +26,7 @@ function _WorkFreelancing() {
   )
 }
 
-function _WorkMirasee() {
+function Work_Mirasee() {
   return (
     <React.Fragment>
       <h4 id="developer-developer-avocado-developer-">
@@ -66,7 +66,7 @@ function _WorkMirasee() {
   )
 }
 
-function _WorkCourses() {
+function Work_Courses() {
   return (
     <React.Fragment>
       <h4 id="course-technologist-courses-">Course Technologist</h4>
@@ -120,7 +120,7 @@ function _WorkCourses() {
   )
 }
 
-function _WorkMarketing() {
+function Work_Marketing() {
   return (
     <React.Fragment>
       <h4 id="online-marketer-online-">Online Marketer</h4>
@@ -173,7 +173,7 @@ function _WorkMarketing() {
   )
 }
 
-function _WorkArt() {
+function Work_Art() {
   return (
     <React.Fragment>
       <h4 id="art-instructor-art-">Art Instructor</h4>
@@ -218,7 +218,7 @@ function _WorkArt() {
   )
 }
 
-function _WorkAnimator() {
+function Work_Animator() {
   return (
     <React.Fragment>
       <h4 id="animator-animator-">Animator </h4>
@@ -243,7 +243,7 @@ function _WorkAnimator() {
   )
 }
 
-function _WorkBurrito() {
+function Work_Burrito() {
   return (
     <React.Fragment>
       <h4 id="burrito-maker-burrito-">Burrito Maker </h4>
@@ -257,7 +257,7 @@ function _WorkBurrito() {
   )
 }
 
-function _WorkPokemon() {
+function Work_Pokemon() {
   return (
     <React.Fragment>
       <h4 id="pokemon-master-pokemon-">Pokemon Master</h4>
@@ -327,14 +327,14 @@ class AboutMe extends React.Component {
 
     return (
       <Layout location={this.props.location} title={siteTitle}>
-        <_WorkMirasee />
-        <_WorkCourses />
-        <_WorkFreelancing />
-        <_WorkMarketing />
-        <_WorkArt />
-        <_WorkAnimator />
-        <_WorkBurrito />
-        <_WorkPokemon />
+        <Work_Mirasee />
+        <Work_Courses />
+        <Work_Freelancing />
+        <Work_Marketing />
+        <Work_Art />
+        <Work_Animator />
+        <Work_Burrito />
+        <Work_Pokemon />
         <Link to="/"> Return home </Link> <br />
       </Layout>
     )

@@ -10,8 +10,13 @@ import "../styles/index.scss"
 
 //images
 import YoungRocky from "../../content/assets/young-rocky.jpeg"
-import Elearning from "../../content/assets/elearning.png"
-import Robot from "../../content/assets/robot.png"
+import Elearning from "../../content/assets/index_elearning.png"
+import Worm from "../../content/assets/index_worm.png"
+import Robot from "../../content/assets/index_robot.png"
+
+import BlogProfessional from "../../content/assets/index_1_code.png"
+import BlogInterests from "../../content/assets/index_3_web-design.png"
+import BlogCoding from "../../content/assets/index_2_simulation.png"
 
 function Hi() {
   return (
@@ -36,21 +41,17 @@ function Hi() {
 }
 const CardWrapper = props => {
   return (
-    <div className="card">
+    <React.Fragment>
       <div className="card-title-image">
-        <a href={props.link}>
-          <h3 className="card-title"> {props.title}</h3>{" "}
-        </a>
-        <a href={props.link}>
-          <img className="card-image" src={props.image} />
-        </a>
+        <h3 className="card-title"> {props.title}</h3>{" "}
+        <img className="card-image" src={props.image} />
       </div>
       {props.body ? (
         <div className="card-text">
           <p>{props.body}</p>
         </div>
       ) : null}
-    </div>
+    </React.Fragment>
   )
 }
 
@@ -78,7 +79,21 @@ function RecentWork() {
   return (
     <div>
       <h2 className="main-title">Recent Work </h2>
-      <p> Working on getting this up soon. Stay tuned. </p>
+      <p> Working on getting more content from the prior blog. </p>
+      <div className="card-container recent-work">
+        <div className="card">
+          <Link to="/project-peerreview/">
+            <CardWrapper title="Peer Review" image={Elearning} />
+          </Link>
+        </div>
+
+        <div className="card">
+          <Link to="/project-wormapp/">
+            <CardWrapper title="Worm App" image={Worm} />
+          </Link>
+        </div>
+      </div>
+
       {/* <div className="card-container recent-work">
         <CardWrapper title="OTHER PROJECT" image={Elearning} link="#" />
         <CardWrapper title="OTHER PROJECT" image={Robot} link="#" />
@@ -98,19 +113,19 @@ function NewBlogPost() {
       <div className="card-container blog">
         <RowWrapper
           title="Coding"
-          image={Elearning}
+          image={BlogCoding}
           body="Coding and How-tos guides. Education. [Coming soon: GraphQL display of tagged content]"
           link="blog"
         />
         <RowWrapper
           title="Interests"
-          image={Robot}
+          image={BlogInterests}
           body="Less techie/professional. Hacks! [Coming soon: GraphQL display of tagged content]"
           link="blog"
         />
         <RowWrapper
           title="Professional"
-          image={Elearning}
+          image={BlogProfessional}
           body="team, management, or code thoughts [Coming soon: GraphQL display of tagged content]"
           link="blog"
         />
@@ -126,7 +141,7 @@ class IndexPage extends React.Component {
     return (
       <Layout location={this.props.location} title={siteTitle}>
         <SEO
-          title="Hey Its Rocky's Blog!"
+          title="Hey, It's Rocky!"
           keywords={[`blog`, `gatsby`, `javascript`, `react`]}
         />
 
