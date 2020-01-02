@@ -13,9 +13,9 @@ class AboutMe extends React.Component {
       <Layout location={this.props.location.pathname} title={siteTitle}>
         {console.log(this.props.location.pathname)}
         <div className="skills">
-          <_Languages />
-          <_Libraries />
-          <_SkillSet />
+          <SkillsLanguages />
+          <SkillsLibraries />
+          <SkillsSkillSet />
         </div>
         <div>
           <h2> Okay, but who are you? </h2>
@@ -32,7 +32,7 @@ class AboutMe extends React.Component {
   }
 }
 
-function _Languages() {
+function SkillsLanguages() {
   return (
     <div className="card">
       <h2 className="title">Languages</h2>
@@ -45,7 +45,7 @@ function _Languages() {
   )
 }
 
-function _Libraries() {
+function SkillsLibraries() {
   return (
     <div className="card">
       <h2 className="title">Frameworks</h2>
@@ -59,7 +59,7 @@ function _Libraries() {
   )
 }
 
-function _SkillSet() {
+function SkillsSkillSet() {
   return (
     <div className="card">
       <h2 className="title">Skillset</h2>

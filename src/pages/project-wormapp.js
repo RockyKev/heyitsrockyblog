@@ -1,5 +1,4 @@
 import React from "react"
-import { Link } from "gatsby"
 
 import Layout from "../components/layout"
 
@@ -60,6 +59,7 @@ class ProjectPeerReview extends React.Component {
           <a
             href="https://github.com/RockyKev/nucamp4-react-native-portfolio"
             target="_blank"
+            rel="noopener noreferrer"
           >
             Worm App Repo
           </a>

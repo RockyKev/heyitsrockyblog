@@ -1,5 +1,4 @@
 import React from "react"
-import { Link } from "gatsby"
 // import containerStyles from "../styles/topbar.module.scss"
 import "../styles/footer.scss"
 

@@ -5,7 +5,6 @@ import Layout from "../components/layout"
 import SEO from "../components/seo"
 import Button from "../components/button"
 
-import Placeholder from "../components/placeholder"
 import "../styles/index.scss"
 
 //images
@@ -13,6 +12,7 @@ import YoungRocky from "../../content/assets/young-rocky.jpeg"
 import Elearning from "../../content/assets/index_elearning.png"
 import Worm from "../../content/assets/index_worm.png"
 import Robot from "../../content/assets/index_robot.png"
+import Website from "../../content/assets/index_website.png"
 
 import BlogProfessional from "../../content/assets/index_1_code.png"
 import BlogInterests from "../../content/assets/index_3_web-design.png"
@@ -44,7 +44,7 @@ const CardWrapper = props => {
     <React.Fragment>
       <div className="card-title-image">
         <h3 className="card-title"> {props.title}</h3>{" "}
-        <img className="card-image" src={props.image} />
+        <img className="card-image" src={props.image} alt="card image" />
       </div>
       {props.body ? (
         <div className="card-text">
@@ -90,6 +90,12 @@ function RecentWork() {
         <div className="card">
           <Link to="/project-wormapp/">
             <CardWrapper title="Worm App" image={Worm} />
+          </Link>
+        </div>
+
+        <div className="card">
+          <Link to="/project-websites/">
+            <CardWrapper title="Single Page Websites" image={Website} />
           </Link>
         </div>
       </div>

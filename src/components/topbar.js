@@ -1,5 +1,4 @@
 import React, { Component } from "react"
-import styled from "styled-components"
 import { Link } from "gatsby"
 
 import "../styles/topbar.scss"
@@ -28,12 +27,9 @@ export default class Topbar extends Component {
 
   render() {
     const { scrolled } = this.state
-    const { menuLinks } = this.props
-    const theme = this.context
 
     return (
       <nav className={scrolled ? "nav scroll" : "nav"}>
-        {/* <nav className="nav"> */}
         <div className="nav-container">
           <div className="brand">
             <Link to="/">
