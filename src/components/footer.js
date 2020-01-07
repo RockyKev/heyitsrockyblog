@@ -6,7 +6,7 @@ const Footer = () => {
   return (
     <div className="footer">
       © {new Date().getFullYear()} - Built with{" "}
-      <a href="https://www.gatsbyjs.org">Gatsby</a> and lots of coffee.
+      <a href="https://www.gatsbyjs.org">Gatsby</a> and lots of coffee and pizza.
     </div>
   )
 }
