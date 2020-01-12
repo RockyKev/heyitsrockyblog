@@ -5,7 +5,7 @@ const ClickToHide = props => {
   const Wrapper = styled.div`
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    align-items: flex-start;
 
     section {
       width: 50%;

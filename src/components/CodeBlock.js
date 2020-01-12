@@ -5,13 +5,15 @@ const CodeBlock = props => {
   const Wrapper = styled.pre`
     background: black;
     color: white;
-    padding: 10px;
-    border: 2px dotted white;
+    margin: 10px;
+    border: 6px inset dimgrey;
+    max-height: 400px;
+    overflow-y: auto;
   `;
 
   return (
     <section>
-      <h2> {props.title} </h2>
+      <h3> {props.title} </h3>
       <Wrapper>{props.children}</Wrapper>
     </section>
   );
