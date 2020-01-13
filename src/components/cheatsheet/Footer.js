@@ -10,7 +10,10 @@ const Footer = () => {
     width: 100%;
     display: flex;
     justify-content: space-between;
+    align-items: flex-end;
+
     color: white;
+    padding: 10px;
 
     p {
       padding: 20px;
@@ -25,8 +28,11 @@ const Footer = () => {
           width: 100%;
           display: flex;
           justify-content: space-between;
+          align-items:flex-end;
+
           color: white;
           padding: 10px;
+
         }
 
         .footer p {
