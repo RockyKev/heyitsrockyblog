@@ -14,6 +14,15 @@ import Navbar from "../components/cheatsheet/Navbar";
 import Footer from "../components/cheatsheet/Footer";
 
 const cheatsheet = () => {
+  const List = () => (
+    <ul>
+      <li>Stock Photos: Pexel, Pixabay </li>
+      <li>Stock Icons: Flaticon.com, the Noun Project </li>
+      <li>CSS Buttons Generator: Google it </li>
+      <li>HTML Editor: Google it</li>
+    </ul>
+  );
+
   const Wrapper = styled.div`
     padding: 0px 20px;
 
@@ -35,6 +44,7 @@ const cheatsheet = () => {
       <Callout />
       <Navbar />
       <Footer />
+      <List />
     </Wrapper>
   );
 };

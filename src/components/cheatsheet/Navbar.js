@@ -27,7 +27,8 @@ const Navbar = () => {
       li {
         display: block;
         float: left;
-        width: 50px;
+        padding-right: 15px;
+        width: auto;
         margin: 0;
       }
     }
@@ -59,7 +60,8 @@ const Navbar = () => {
         .nav-links li {
           display: block;
           float: left;
-          width: 50px;
+          padding-right: 15px;
+        width: auto;
         }
       `}</code>
     </CodeBlock>

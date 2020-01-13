@@ -1,32 +1,32 @@
-import React, { Component } from "react"
-import { Link } from "gatsby"
+import React, { Component } from "react";
+import { Link } from "gatsby";
 
-import "../styles/topbar.scss"
+import "../styles/topbar.scss";
 
 export default class Topbar extends Component {
   constructor(props) {
-    super(props)
-    this.state = { scrolled: false }
+    super(props);
+    this.state = { scrolled: false };
   }
 
   componentDidMount() {
-    window.addEventListener("scroll", this.navOnScroll)
+    window.addEventListener("scroll", this.navOnScroll);
   }
 
   componentWillUnmount() {
-    window.removeEventListener("scroll", this.navOnScroll)
+    window.removeEventListener("scroll", this.navOnScroll);
   }
 
   navOnScroll = () => {
     if (window.scrollY > 20) {
-      this.setState({ scrolled: true })
+      this.setState({ scrolled: true });
     } else {
-      this.setState({ scrolled: false })
+      this.setState({ scrolled: false });
     }
-  }
+  };
 
   render() {
-    const { scrolled } = this.state
+    const { scrolled } = this.state;
 
     return (
       <nav className={scrolled ? "nav scroll" : "nav"}>
@@ -38,13 +38,14 @@ export default class Topbar extends Component {
             </Link>
           </div>
           <div className="links">
+            <Link to="/cheatsheet/">CheatSheet</Link>
             <Link to="/blog/">Go to Blog</Link>
             <Link to="/work/">Work I've done</Link>
             <Link to="/about-me/">About Me</Link>
           </div>
         </div>
       </nav>
-    )
+    );
   }
 }
 

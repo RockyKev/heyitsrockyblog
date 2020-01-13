@@ -39,9 +39,12 @@ const Jumbotron = () => {
   const HtmlBlock = () => (
     <CodeBlock title="HTML">
       <code>{`
-    <div class="jumbotron">
+    <section class="jumbotron">
+    <div>      
       <h2> TEXT FILLER 123 </h2>
-    </div>
+      <h3> Smaller subtext below </h3>
+   </div>
+    </section>
       `}</code>
     </CodeBlock>
   );
@@ -50,7 +53,10 @@ const Jumbotron = () => {
     <section>
       <h2>Jumbotron image </h2>
       <Wrapper>
-        <h2> TEXT FILLER HERE </h2>
+        <div>
+          <h2> TEXT FILLER 123 </h2>
+          <h3> Smaller subtext below </h3>
+        </div>
       </Wrapper>
       <ClickToHide>
         <CSSBlock />

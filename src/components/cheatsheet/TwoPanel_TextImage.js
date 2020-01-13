@@ -8,11 +8,12 @@ const TwoPanel_TextImage = () => {
   const Wrapper = styled.div`
     display: flex;
     justify-content: space-between;
-    align-items: flex-start;
+    align-items: center;
 
     img {
       flex: 1;
       padding: 0 20px;
+      max-width: 400px;
     }
 
     div {
@@ -27,12 +28,13 @@ const TwoPanel_TextImage = () => {
         .panels-two {
           display: flex;
           justify-content: space-between;
-          align-items: flex-start;
+          align-items: center;
         }
           
         .panels-two img {
           flex: 1;
           padding: 0 20px;
+          max-width: 400px;
         }
   
         .panels-two div {

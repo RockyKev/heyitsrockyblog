@@ -11,7 +11,10 @@ const Footer = () => {
     display: flex;
     justify-content: space-between;
     color: white;
-    padding: 10px;
+
+    p {
+      padding: 20px;
+    }
   `;
 
   const CSSBlock = () => (
@@ -24,6 +27,10 @@ const Footer = () => {
           justify-content: space-between;
           color: white;
           padding: 10px;
+        }
+
+        .footer p {
+          padding: 20px;
         }
       `}</code>
     </CodeBlock>
